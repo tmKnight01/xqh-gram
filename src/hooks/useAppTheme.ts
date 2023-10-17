@@ -1,7 +1,7 @@
 import { useColorScheme } from 'react-native'
 import { getAppTheme } from '../themes/theme'
 
-export default function  () {
+export default function () {
   const theme = useColorScheme()
 
   const isDrak = theme === 'dark'
@@ -24,6 +24,7 @@ const mergeTheme = (isDrak: boolean, theme: ReturnType<typeof getAppTheme>) => {
   // 返回 主题颜色，以及所以颜色在业务代码中使用....
   return {
     ...primaryTheme,
-    Color: mergedColor,
+    Colors: mergedColor,
+    isDrak,
   }
 }

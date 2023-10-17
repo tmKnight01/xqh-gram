@@ -8,3 +8,9 @@ export const navigate = (name, parpams) => {
     navigationRef.navigate(name, parpams)
   }
 }
+
+export const defaultScreenOption = {
+  headerShown: false,
+  statusBarAnimation: 'slide',
+  animation: 'slide_from_right',
+}

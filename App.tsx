@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import Application from './src/navigators/Application';
+import Application from '@/navigators/Application';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 
